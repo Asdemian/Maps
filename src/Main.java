@@ -1,5 +1,13 @@
+import products.ListProducts;
+import products.ListRecipe;
+import products.Product;
+import products.Recipe;
+
+import java.util.*;
+
 public class Main {
     public static void main(String[] args) {
+        /*
         PhoneBook phoneBook = new PhoneBook();
         phoneBook.add("Евлампий Авасянович", "89513587420");
         phoneBook.add("Дмитрий Сергеевич", "89513587425");
@@ -23,6 +31,31 @@ public class Main {
         phoneBook.add("Анька Российская", "+79515468524");
 
         phoneBook.printPone();
-    }
 
+         */
+
+        Product apple = new Product("Яблоко", 145, 3);
+        Product orange = new Product("Апельсин", 410, 5);
+        Product banana = new Product("Банан", 150, 4);
+        Product cheese = new Product("Сыр", 300, 1);
+        Product sausage = new Product("Колбаса", 400, 2);
+        Product fish = new Product("Рыба", 370, 2);
+        Product meat = new Product("Мясо", 480, 1);
+
+
+        Map<Product, Integer> productMap = new HashMap();
+        ListProducts listProducts = new ListProducts(productMap);
+        listProducts.add(apple);
+        listProducts.add(cheese);
+        listProducts.add(sausage);
+        //  listProducts.add(apple);
+
+        System.out.println(listProducts);
+
+        Recipe all = new Recipe("Закадычный");
+        all.add(apple);
+        all.add(sausage);
+
+        System.out.println(all);
+    }
 }
