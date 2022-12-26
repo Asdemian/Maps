@@ -2,7 +2,7 @@ package products;
 
 import java.util.*;
 
-public class MAP1 {
+public class Map1 {
     public static void main(String[] args) {
        // Random random = new Random();
         Map<String, List<Integer>> map = new HashMap<>();
