@@ -33,7 +33,7 @@ public class Main {
         phoneBook.printPone();
 
          */
-
+/*
         Product apple = new Product("Яблоко", 145, 3);
         Product orange = new Product("Апельсин", 410, 5);
         Product banana = new Product("Банан", 150, 4);
@@ -57,5 +57,11 @@ public class Main {
         all.add(sausage);
 
         System.out.println(all);
+
+ */
+
+
+
     }
+
 }
